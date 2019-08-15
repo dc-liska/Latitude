@@ -7,61 +7,62 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 150%;
-  color: #000000;
-  background: #a8a8a8;
+  color: #050505;
+  background: #e2e2e2;
 }
 
 header {
-  background: #fff1f1;
+  background: #fffefe;
 }
 
 
 h1 {
+  color:#96d3c6;
   padding: 40px 20px;
   margin: 0px;
   margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 36px;
-  text-align: center;
+  font-weight: bold;
 }
 
 h2 {
+  color:#96d3c6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
+  font-weight: bold;
 }
 
 h4 {
-  color:#f1f1f1
+  color:#96d3c6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  font-weight: bold
+  font-weight: bold;
 }
 
-p{
-  color: #f1f1f1
-}
 
 /* Selecting elements by class */
-.container {
-  width: 1024px;
-  margin: 0 auto;
-  background-color: #f1f1f1;
+.room {
+  margin: 20px 17px;
+  padding: 20px;
+  background-color: #fffefe;
 }
 
-.navbar-id{
-  background-color: #000000;
-  color: #ffa800;
+.navigation{
+  color: #000000;
   align-content: center;
-  align-items: center;
+  align-items: right;
   padding: 10px;
 }
 
 .nav-link{
-  color: #ffffff;
   font-weight: bold;
 }
 
 .post{
-  margin-top: 50px
-  margin-left: 100px
-  margin-right: 100px
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .citiesTable
