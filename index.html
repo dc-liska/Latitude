@@ -7,38 +7,47 @@
     <title>Welcome to the Latitude Webpage</title>
 
   <!-- Stylesheet connections -->
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-   <!-- JavaScript JIC -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 
 <header>
-    <h2>Latitude</h2>
-    <div class="navigation">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="visualization1.html">Max Temperature</a>
-            <a class="dropdown-item" href="visualization2.html">Humidity</a>
-            <a class="dropdown-item" href="visualization3.html">Cloudiness</a>
-            <a class="dropdown-item" href="visualization4.html">Wind Speed</a>
-            </div>
-        </div>
-        <a href="comparison.html">Comparison</a>    <a href="data.html">Data</a>
+    <div class="navbar">
+        <div class="navbar-brand"><h2>Latitude</h2></div>
+        <ul class="nav navbar-nav">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="visualization1.html">Max Temperature</a>
+                    <a class="dropdown-item" href="visualization2.html">Humidity</a>
+                    <a class="dropdown-item" href="visualization3.html">Cloudiness</a>
+                    <a class="dropdown-item" href="visualization4.html">Wind Speed</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li>
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+        </ul>
     </div>
 
 </header>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-8">
+        <div class="col-md-12 col-lg-8">
             <div class="room">
             <h1>Summary: Latitude vs. X</h1>
             <hr>
@@ -48,22 +57,24 @@
             </p>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-12 col-lg-4">
             <div class="room">
-            <h2>Visualizations</h2>
-            <hr>
-            <table border="0">
-                <tr>
-                    <td><a href="visualization1.html"><img src="images/fig1.png" width="120" alt="Max Temperature Visualization"></a></td>
-                    <td><a href="visualization2.html"><img src="images/fig2.png" width="120" alt="Humidity Visualization"></a></td>
-                </tr>
-                <tr>
-                    <td><a href="visualization3.html"><img src="images/fig3.png" width="120" alt="Cloudiness Visualization"></a></td>
-                    <td><a href="visualization4.html"><img src="images/fig4.png" width="120" alt="Wind Speed Visualization"></a></td>
-                </tr>
-              
-            </table>
-            
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-6">
+                    <a href="visualization1.html"><img src="images/fig1.png" width="120" alt="Max Temperature Visualization"></a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-6">
+                    <a href="visualization2.html"><img src="images/fig2.png" width="120" alt="Humidity Visualization"></a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-6">
+                    <a href="visualization3.html"><img src="images/fig3.png" width="120" alt="Cloudiness Visualization"></a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-6">   
+                    <a href="visualization4.html"><img src="images/fig4.png" width="120" alt="Wind Speed Visualization"></a>
+                </div> 
+                </div>       
             </div>
         </div>
     </div>

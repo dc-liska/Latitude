@@ -40,19 +40,35 @@ h4 {
   font-weight: bold;
 }
 
-
-/* Selecting elements by class */
-.room {
-  margin: 20px 17px;
-  padding: 20px;
-  background-color: #fffefe;
+li {
+  display: inline;
 }
 
-.navigation{
+table {
+  border: 0px;
+}
+
+/* Selecting elements by class */
+
+.navbar{
   color: #000000;
-  align-content: center;
-  align-items: right;
+  /*align-content: center; 
+  align-items: right; */
   padding: 10px;
+}
+
+.navbar-brand{
+  background-color: #96d3c6;
+}
+
+.navbar-brand h2{
+  color:#fffefe;
+}
+
+.room {
+  margin: 25px 16px;
+  padding: 20px;
+  background-color: #fffefe;
 }
 
 .nav-link{
@@ -83,3 +99,17 @@ h4 {
 	mso-background-source:auto;
 	mso-pattern:auto;
 	white-space:nowrap;}
+
+
+  @media (max-width: 570px) {
+
+    .navbar {
+      padding: 5px;
+    }
+
+    .room {
+      margin: 15px 4px;
+      padding: 5px;
+    }
+
+  }
